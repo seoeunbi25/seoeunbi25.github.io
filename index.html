@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <title>seoeunbi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="input-group">
+            <img src="./naver1.png" width="30px" style="float: left;">
+            <input type="text" class="form-control" placeholder="검색어를 입력해 주세요">
+            <img src="./naver2.png" width="30px" style="float: right;">
+        </div>
+    </form>
+
+    <ul class="naver_list">
+        <li><a href="">12기</a></li>
+        <li><a href="">아기사자</a></li>
+        <li><a href="">백엔드</a></li>
+        <li><a href="">담당</a></li>
+        <li><a href="">서은비</a></li>
+        <li><a href="">입니다</a></li>
+        <li><a href="">멋사</a></li>
+        <li><a href="">파이팅</a></li>
+        <li><a href="">!!!!</a></li>
+    </ul>
+
+    <div class="container1" id="boxs">
+        <div class="box1">
+            <div>
+                <img src="./music.png" width="10%">
+                <p>로이킴-봄이와도 / 경서-봄이야 / 세븐틴-하품, 돌고돌아</p>
+            </div>
+        </div>
+        <div class="box2">
+            <ul class="naver_login2">
+                <li><a href="">아이디 찾기  ㅣ</a></li>
+                <li><a href="">비밀번호 찾기  ㅣ</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container2" id="boxs">
+        <div class="box3">
+            <div>
+                <img src="./life1.jpg" width="70%">
+                <p>사실 골프 칠 줄 모릅니다 하하<br></p>
+                <p>배구 보는 거, 하는 거 다 좋아해요!!</p>
+            </div>
+            <div>
+                <img src="./life2.jpg" width="70%">
+                <p>로또 5천원 당첨됐어요!!<br></p>
+                <p>1등 당첨하는 그날까지 파이팅ㅠㅠ</p>
+            </div>
+            <div>
+                <img src="./life3.jpg" width="70%">
+                <p>♡♡♡♡♡</p>
+            </div>
+        </div>
+        <div class="box4">
+            <div id="img_cat">
+                <p><img src="./cat1.jpg" class="cat_image" id="picture1" alt="image" width="200px"></p>
+                <p><img src="./cat2.jpg" class="cat_image" id="picture2" alt="image" width="200px"></p>
+                <p><img src="./cat3.jpg" class="cat_image" id="picture3" alt="image" width="200px"></p>
+                <p>
+                    <button onclick="changePic(-1);">이전</button>
+                    <button onclick="changePic(1);">다음</button>
+                </p>
+            </div>
+            <div class="box6">
+                <ul class="instagram_github">
+                    <li><a href="https://www.instagram.com/dms_ql_?igsh=c256YmMxNDl3ZzY1">instagram(서은비)</a></li>
+                    <li><a href="https://www.instagram.com/nu._.rungg?igsh=cng1YWhwZDZ2ZHV4&utm_source=qr">instagram(누렁)</a></li>
+                    <li><a href="https://github.com/seoeunbi25">github</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3" id="boxs">
+        <div class="box5">
+            <div>
+                <img src="./under1.png" width="30px">
+                <img src="./under2.jpg" width="30px">
+            </div>
+            <div>
+                <p>게임하는 거 좋아해요!!<br></p>
+                <p>서든, 크아, 테런, 배그해요<br></p>
+                <p>서든, 크아 계정 잃어버려서 처음부터...</p>
+            </div>
+            <div>
+                <img src="./under3.jpg" width="30px">
+                <img src="./under4.jpg" width="30px">
+            </div>
+            <div>
+                <p>뮤지컬 좋아해요!!<br></p>
+                <p>다음엔 '빨래' 보려구요<br></p>
+                <p>좋은 뮤지컬 추천해주세요!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var currentIndex = 0;
+
+        function changePic(step) {
+            var images = document.querySelectorAll('.cat_image');
+            var numImages = images.length;
+
+            currentIndex += step;
+
+            if (currentIndex < 0) {
+                currentIndex = numImages - 1;
+            } else if (currentIndex >= numImages) {
+                currentIndex = 0;
+            }
+
+            for (var i = 0; i < numImages; i++) {
+                images[i].style.display = 'none';0
+            }
+
+            images[currentIndex].style.display = 'block';
+        }
+    </script>
+</body>
+</html>
