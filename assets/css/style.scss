@@ -11,3 +11,22 @@
   @import "toggle";
   @import "dark";
 {%- endif -%}
+
+.post-meta {
+  position: static !important;
+  float: none !important;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.post-container {
+  display: block !important;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html, body, .post, .content, main {
+  font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
