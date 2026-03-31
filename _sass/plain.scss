@@ -15,7 +15,7 @@ $leftWidth: 220px;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
@@ -243,8 +243,8 @@ main {
   padding-left: 30px;
 }
 .post {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 300;
+  font-family: 'Pretendard', 'Inter', sans-serif;
+  font-weight: 400;
   color: #222;
   line-height: 1.9em;
   p {
@@ -264,7 +264,7 @@ main {
   h4,
   h5,
   h6 {
-    font-family: Raleway, sans-serif;
+    font-family: 'Pretendard', 'Inter', sans-serif;
   }
 }
 .posts-labelgroup {
@@ -292,7 +292,7 @@ table {
   }
   th {
     background-color: #eee;
-    font-family: Raleway;
+    font-family: 'Pretendard', 'Inter', sans-serif;
   }
 }
 
