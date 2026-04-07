@@ -43,7 +43,7 @@ layout: default
         <div class="post-meta">
           <span class="post-date">
             <i class="icon-calendar"></i>
-            {{ post.date | date: date_format }}
+            {{ post.date | date: "%Y/%m/%d" }}
           </span>
 
           {%- if post.categories.size > 0-%}
